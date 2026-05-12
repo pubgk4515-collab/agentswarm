@@ -1,0 +1,260 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI-Powered Instagram DM Automation</title>
+  <meta name="description" content="AI-powered Instagram DM automation for creators and business owners. Turn every comment into a 24/7 sales agent." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+          },
+          boxShadow: {
+            glow: '0 0 0 1px rgba(255,255,255,0.08), 0 20px 60px rgba(0,0,0,0.55), 0 0 40px rgba(120,119,198,0.16)',
+          },
+          backgroundImage: {
+            'mesh-symbiote': 'radial-gradient(circle at 20% 20%, rgba(99,102,241,0.18), transparent 28%), radial-gradient(circle at 80% 0%, rgba(16,185,129,0.12), transparent 24%), radial-gradient(circle at 50% 80%, rgba(236,72,153,0.10), transparent 30%)',
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }body {
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.02), transparent 20%),
+    radial-gradient(circle at top, rgba(255,255,255,0.05), transparent 30%),
+    #050505;
+}
+
+.glass {
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.noise {
+  position: relative;
+}
+
+.noise::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.06;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.2' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.35'/%3E%3C/svg%3E");
+  mix-blend-mode: overlay;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 700ms ease, transform 700ms ease;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.cta-glow {
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.06), 0 16px 50px rgba(124,58,237,0.35), 0 0 38px rgba(59,130,246,0.18);
+}
+
+  </style>
+</head>
+<body class="font-sans text-white antialiased selection:bg-white selection:text-black">
+  <div class="noise min-h-screen overflow-x-hidden">
+    <!-- Background mesh -->
+    <div class="pointer-events-none fixed inset-0 -z-10 bg-mesh-symbiote"></div><main class="mx-auto flex min-h-screen max-w-6xl flex-col px-5 pb-10 pt-6 sm:px-6 lg:px-8">
+  <!-- Top bar -->
+  <header class="reveal mx-auto flex w-full max-w-3xl items-center justify-between rounded-full glass px-4 py-3 shadow-glow sm:px-5">
+    <div class="flex items-center gap-3">
+      <div class="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5">
+        <i data-lucide="sparkles" class="h-5 w-5 text-white"></i>
+      </div>
+      <div>
+        <p class="text-sm font-semibold tracking-wide text-white">Symbiote Agency</p>
+        <p class="text-xs text-white/55">AI-Powered DM Automation</p>
+      </div>
+    </div>
+    <a href="#pricing" class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-white/85 transition hover:bg-white/10 hover:text-white">
+      Pricing
+    </a>
+  </header>
+
+  <!-- Hero -->
+  <section class="reveal mx-auto flex w-full max-w-4xl flex-1 flex-col items-center justify-center px-1 py-16 text-center sm:py-20 lg:py-24">
+    <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/75 shadow-glow">
+      <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
+      Built for creators, coaches, agencies, and business owners
+    </div>
+
+    <h1 class="max-w-4xl text-4xl font-black tracking-tight text-white sm:text-6xl lg:text-7xl">
+      Turn Every Comment into a 24/7 Sales Agent.
+    </h1>
+
+    <p class="mt-6 max-w-2xl text-base leading-8 text-white/68 sm:text-lg">
+      Stop losing leads to slow DMs. Our AI Agents handle inquiries, handle objections, and close deals in your voice—on autopilot.
+    </p>
+
+    <div class="mt-10 flex w-full max-w-lg flex-col gap-3 sm:flex-row sm:justify-center">
+      <!-- Replace the link below with your WhatsApp DM / Instagram DM URL -->
+      <a href="https://wa.me/918509460738?text=Hi%2C%20I%20want%20the%20AI%20Instagram%20DM%20Automation%20setup" target="_blank" rel="noreferrer" class="cta-glow inline-flex items-center justify-center gap-2 rounded-[28px] bg-white px-6 py-4 text-base font-semibold text-black transition duration-300 hover:-translate-y-0.5 hover:bg-white/95">
+        <i data-lucide="message-circle" class="h-5 w-5"></i>
+        Get Your AI Agent Now
+      </a>
+      <a href="https://instagram.com/agentswarm.ai" target="_blank" rel="noreferrer" class="inline-flex items-center justify-center gap-2 rounded-[28px] border border-white/10 bg-white/5 px-6 py-4 text-base font-semibold text-white/90 transition duration-300 hover:-translate-y-0.5 hover:bg-white/10">
+        <i data-lucide="instagram" class="h-5 w-5"></i>
+        DM on Instagram
+      </a>
+    </div>
+
+    <div class="mt-10 grid w-full max-w-3xl grid-cols-1 gap-4 sm:grid-cols-3">
+      <div class="glass rounded-[28px] p-5 text-left shadow-glow">
+        <p class="text-3xl font-black tracking-tight">24/7</p>
+        <p class="mt-1 text-sm text-white/60">Lead handling, even while you sleep</p>
+      </div>
+      <div class="glass rounded-[28px] p-5 text-left shadow-glow">
+        <p class="text-3xl font-black tracking-tight">1 Voice</p>
+        <p class="mt-1 text-sm text-white/60">Replies that sound like you</p>
+      </div>
+      <div class="glass rounded-[28px] p-5 text-left shadow-glow">
+        <p class="text-3xl font-black tracking-tight">0 Delay</p>
+        <p class="mt-1 text-sm text-white/60">Instant engagement after every comment</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem section -->
+  <section class="reveal mx-auto w-full max-w-5xl py-6 sm:py-10">
+    <div class="mb-5 flex items-end justify-between gap-4 px-1">
+      <div>
+        <p class="text-sm font-semibold uppercase tracking-[0.24em] text-white/45">The Problem</p>
+        <h2 class="mt-2 text-2xl font-bold tracking-tight text-white sm:text-3xl">The Old Way vs. The AI Way</h2>
+      </div>
+    </div>
+
+    <div class="grid gap-4 lg:grid-cols-2">
+      <div class="glass rounded-[30px] p-6 shadow-glow sm:p-7">
+        <div class="mb-4 flex items-center gap-3">
+          <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-white/5 text-white/80">
+            <i data-lucide="clock-3" class="h-5 w-5"></i>
+          </div>
+          <div>
+            <p class="text-sm font-semibold text-white/55">The Old Way</p>
+            <p class="text-lg font-semibold text-white">Manual, slow, missed sales</p>
+          </div>
+        </div>
+        <ul class="space-y-3 text-sm leading-7 text-white/65">
+          <li class="flex gap-3"><span class="mt-2 h-2 w-2 shrink-0 rounded-full bg-white/30"></span>Replies come late and leads go cold.</li>
+          <li class="flex gap-3"><span class="mt-2 h-2 w-2 shrink-0 rounded-full bg-white/30"></span>Every DM requires time, focus, and manual follow-up.</li>
+          <li class="flex gap-3"><span class="mt-2 h-2 w-2 shrink-0 rounded-full bg-white/30"></span>Missed comments mean missed revenue.</li>
+        </ul>
+      </div>
+
+      <div class="glass rounded-[30px] p-6 shadow-glow sm:p-7 ring-1 ring-emerald-400/20">
+        <div class="mb-4 flex items-center gap-3">
+          <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-emerald-400/10 text-emerald-300">
+            <i data-lucide="zap" class="h-5 w-5"></i>
+          </div>
+          <div>
+            <p class="text-sm font-semibold text-emerald-300/80">The AI Way</p>
+            <p class="text-lg font-semibold text-white">Instant, smart, conversion-first</p>
+          </div>
+        </div>
+        <ul class="space-y-3 text-sm leading-7 text-white/70">
+          <li class="flex gap-3"><span class="mt-2 h-2 w-2 shrink-0 rounded-full bg-emerald-300"></span>Responds instantly with context-aware replies.</li>
+          <li class="flex gap-3"><span class="mt-2 h-2 w-2 shrink-0 rounded-full bg-emerald-300"></span>Qualifies leads and handles objections automatically.</li>
+          <li class="flex gap-3"><span class="mt-2 h-2 w-2 shrink-0 rounded-full bg-emerald-300"></span>Works around the clock to maximize conversions.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Symbiote edge -->
+  <section class="reveal mx-auto w-full max-w-5xl py-6 sm:py-10">
+    <div class="glass rounded-[32px] p-6 shadow-glow sm:p-8 lg:p-10">
+      <div class="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-[0.24em] text-white/45">The Symbiote Edge</p>
+          <h2 class="mt-3 text-2xl font-bold tracking-tight text-white sm:text-3xl">
+            Not a basic bot. An LLM-based agent that understands intent and nuance.
+          </h2>
+          <p class="mt-4 max-w-2xl text-base leading-8 text-white/68">
+            This system is designed to read the conversation, detect buying signals, understand hesitation, and respond with the right tone at the right moment. It behaves more like a smart assistant than a scripted automation tool.
+          </p>
+        </div>
+
+        <div class="grid gap-3">
+          <div class="rounded-[24px] border border-white/10 bg-white/5 p-4">
+            <p class="text-sm font-semibold text-white">Intent-aware</p>
+            <p class="mt-1 text-sm leading-6 text-white/60">Understands whether the person is curious, ready to buy, or needs reassurance.</p>
+          </div>
+          <div class="rounded-[24px] border border-white/10 bg-white/5 p-4">
+            <p class="text-sm font-semibold text-white">Voice-matched</p>
+            <p class="mt-1 text-sm leading-6 text-white/60">Replies feel aligned with your brand personality and communication style.</p>
+          </div>
+          <div class="rounded-[24px] border border-white/10 bg-white/5 p-4">
+            <p class="text-sm font-semibold text-white">Conversion-focused</p>
+            <p class="mt-1 text-sm leading-6 text-white/60">Every interaction is optimized to move the lead closer to purchase.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="reveal mx-auto w-full max-w-3xl py-6 sm:py-10">
+    <div class="glass rounded-[34px] p-7 text-center shadow-glow sm:p-10">
+      <p class="text-sm font-semibold uppercase tracking-[0.24em] text-white/45">Simple Offer</p>
+      <h2 class="mt-4 text-4xl font-black tracking-tight text-white sm:text-5xl">$100 One-Time Setup.</h2>
+      <p class="mt-3 text-xl font-semibold text-white/85">Lifetime ROI.</p>
+      <p class="mx-auto mt-4 max-w-xl text-base leading-8 text-white/65">
+        One clean setup. One powerful system. No complex learning curve, no recurring headache—just a high-converting AI sales layer for your Instagram.
+      </p>
+
+      <div class="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center">
+        <a href="https://wa.me/911234567890?text=I%20want%20the%20%24100%20AI%20Instagram%20DM%20setup" target="_blank" rel="noreferrer" class="inline-flex items-center justify-center gap-2 rounded-[28px] bg-white px-6 py-4 text-base font-semibold text-black transition duration-300 hover:-translate-y-0.5 hover:bg-white/95">
+          <i data-lucide="send" class="h-5 w-5"></i>
+          Start Setup
+        </a>
+        <a href="https://instagram.com/yourhandle" target="_blank" rel="noreferrer" class="inline-flex items-center justify-center gap-2 rounded-[28px] border border-white/10 bg-white/5 px-6 py-4 text-base font-semibold text-white/90 transition duration-300 hover:-translate-y-0.5 hover:bg-white/10">
+          <i data-lucide="message-square-more" class="h-5 w-5"></i>
+          Ask a Question
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="reveal mx-auto w-full max-w-5xl py-8 text-center text-sm text-white/40">
+    <p>Built for creators and businesses that want faster replies, better conversion, and a cleaner sales flow.</p>
+  </footer>
+</main>
+
+  </div>  <script>
+    // Initialize icons
+    lucide.createIcons();
+
+    // Reveal on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) entry.target.classList.add('show');
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+  </script></body>
+</html>
